@@ -24,7 +24,7 @@ public class RegisterPage extends BaseClass {
 
 
 
-    public void Registrar(String genero ,String nombre, String apellido, String correo, String pass, String resultadoesperado){
+    public void Registrar(String genero ,String nombre, String apellido, String correo, String pass){
         if(genero == "male"){
             click(esperaExplicita(genderMale));
         }else{
@@ -35,8 +35,10 @@ public class RegisterPage extends BaseClass {
         agregarTexto(esperaExplicita(email),correo);
         agregarTexto(esperaExplicita(password),pass);
         agregarTexto(esperaExplicita(confirmPassword),pass);
-
         click(esperaExplicita(btnRegister));
+    }
+    public String obtenerOkRegister(){
+        return obtenerTexto(esperaExplicita(registerOK));
     }
 
 

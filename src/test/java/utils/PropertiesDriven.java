@@ -13,7 +13,7 @@ public class PropertiesDriven {
         props = new Properties();
 
         //Definimos String con la ruta del fichero con las properties del proyecto
-        String rutaFile = "C:\\Users\\Domingo.Saavedra\\Desktop\\RepasoCurso\\src\\main\\resources\\properties.properties";
+        String rutaFile = "F:\\TP TRABAJO\\TrabajoPOM\\src\\main\\resources\\properties.properties";
 
         //Instentamos instanciar el fichero como un objeto de tipo file
         try {

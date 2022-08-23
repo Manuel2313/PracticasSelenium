@@ -11,7 +11,7 @@ public class HomePage extends BaseClass {
         super(driver);
     }
 
-  By btnRegistro = By.xpath("//a[contains(text(),'Register')]");
+    By btnRegistro = By.xpath("//a[contains(text(),'Register')]");
 
 
     public void IraRegistro(){
