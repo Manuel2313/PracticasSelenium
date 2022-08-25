@@ -86,6 +86,15 @@ public class Tests{
     }
 
     @Test
+    public void CP05AgregarProducto (){
+        dataCPs = DataDriven.getData("CP05AgregarProducto");
+        homePage.iraLogin();
+        loginPage.login(dataCPs.get(1),dataCPs.get(2));
+        homePage.irAComputer();
+
+    }
+
+    @Test
     public void CP07SubNewsletter(){
         dataCPs = DataDriven.getData("CP07SubNewsletter");
         homePage.iraLogin();
@@ -94,4 +103,5 @@ public class Tests{
         homePage.esperarXSegundos(2000);
         Assert.assertEquals(newsletterPage.obtenerMsjSub(),dataCPs.get(3));
     }
+
 }
