@@ -14,7 +14,6 @@ import java.util.ArrayList;
 import java.util.Iterator;
 
 public class DataDriven {
-
     public static ArrayList<String> getData(String nombreCP)  {
 
         ArrayList<String> a = new ArrayList<>();
@@ -22,7 +21,8 @@ public class DataDriven {
         //instanciamos un objeto de tipo file con la ruta del excel
         FileInputStream file = null;
         try {
-            file = new FileInputStream(PropertiesDriven.getProperty("rutaExcel"));
+            file = new FileInputStream
+                    (PropertiesDriven.getProperty("rutaExcel"));
         } catch (FileNotFoundException e) {
             e.printStackTrace();
         }
@@ -67,7 +67,7 @@ public class DataDriven {
                 while (filas.hasNext()){
                     Row r = filas.next();
 
-                    if(r.getCell(columna).getStringCellValue().equalsIgnoreCase(nombreCP)){
+                    if((r.getCell(columna)!= null) && r.getCell(columna).getStringCellValue().equalsIgnoreCase(nombreCP)){
 
                         Iterator<Cell> cv = r.cellIterator();
 

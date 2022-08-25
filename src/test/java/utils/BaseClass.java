@@ -12,7 +12,7 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 public class BaseClass {
     //Atributos
     protected WebDriver driver;
-    protected WebDriverWait wait;
+    protected static WebDriverWait wait;
 
     //Accesadores y mutadores
     public WebDriver getDriver() {
@@ -49,7 +49,7 @@ public class BaseClass {
     }
 
     //EsperasExplicitas
-    public WebElement esperaExplicita(By localizador){
+    public  WebElement esperaExplicita(By localizador){
         wait = new WebDriverWait(this.driver,30);
         return wait.until(ExpectedConditions.presenceOfElementLocated(localizador));
     }
@@ -69,7 +69,7 @@ public class BaseClass {
         this.driver.findElement(localizador).click();
     }
 
-    public void click(WebElement elementoWeb){
+    public static void click(WebElement elementoWeb){
         elementoWeb.click();
     }
 
@@ -87,7 +87,7 @@ public class BaseClass {
         this.driver.findElement(localizador).sendKeys(texto);
     }
 
-    public void agregarTexto(WebElement elementoWeb,String texto){
+    public static void agregarTexto(WebElement elementoWeb, String texto){
         elementoWeb.sendKeys(texto);
     }
 

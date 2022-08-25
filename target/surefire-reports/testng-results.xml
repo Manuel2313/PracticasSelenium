@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2022-08-24T17:39:05Z" name="Suite pruebas de regresión" finished-at="2022-08-24T17:39:25Z" duration-ms="19451">
+    <groups>
+    </groups>
+    <test started-at="2022-08-24T17:39:05Z" name="Casos de prueba" finished-at="2022-08-24T17:39:25Z" duration-ms="19451">
+      <class name="tests.Tests">
+        <test-method is-config="true" signature="preparacionEjecucion()[pri:0, instance:tests.Tests@7d0b7e3c]" started-at="2022-08-24T17:39:05Z" name="preparacionEjecucion" finished-at="2022-08-24T17:39:16Z" duration-ms="11143" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- preparacionEjecucion -->
+        <test-method signature="CP00_registro_ok()[pri:0, instance:tests.Tests@7d0b7e3c]" started-at="2022-08-24T17:39:16Z" name="CP00_registro_ok" finished-at="2022-08-24T17:39:25Z" duration-ms="8191" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- CP00_registro_ok -->
+        <test-method is-config="true" signature="posPrueba()[pri:0, instance:tests.Tests@7d0b7e3c]" started-at="2022-08-24T17:39:25Z" name="posPrueba" finished-at="2022-08-24T17:39:25Z" duration-ms="99" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- posPrueba -->
+      </class> <!-- tests.Tests -->
+    </test> <!-- Casos de prueba -->
+  </suite> <!-- Suite pruebas de regresión -->
+</testng-results>

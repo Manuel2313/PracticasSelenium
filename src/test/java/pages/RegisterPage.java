@@ -4,6 +4,8 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import utils.BaseClass;
 
+import java.util.Random;
+
 public class RegisterPage extends BaseClass {
 
 
@@ -12,7 +14,7 @@ public class RegisterPage extends BaseClass {
     }
 
     By genderMale = By.xpath("//input[@id='gender-male']");
-    By genderFemale= By.xpath("//input[@id='gender-female']");
+    By genderFemale = By.xpath("//input[@id='gender-female']");
     By firstName = By.xpath("//input[@id='FirstName']");
     By lastName = By.xpath("//input[@id='LastName']");
     By email = By.xpath("//input[@id='Email']");
@@ -22,24 +24,49 @@ public class RegisterPage extends BaseClass {
 
     By registerOK = By.xpath("//div[contains(text(),'Your registration completed')]");
 
+    By resgisterNOOK = By.xpath("//body/div[4]/div[1]/div[4]/div[2]/form[1]/div[1]/div[2]/div[3]/div[2]/div[1]/span[2]");
 
 
-    public void Registrar(String genero ,String nombre, String apellido, String correo, String pass){
-        if(genero == "male"){
+    public String getNameMail() {
+        String caracteres = "ABCDEFGHIJKLMNOPQRSTUVWXYZ123456789";
+        StringBuilder salt = new StringBuilder();
+        Random rnd = new Random();
+        while (salt.length() < 10) {
+            int index = (int) (rnd.nextFloat() * caracteres.length());
+            salt.append(caracteres.charAt(index));
+        }
+        String saltStr = salt.toString();
+        return saltStr;
+    }
+    String Email = getNameMail() + "@gmail.com";
+
+    public void Registrar(String genero, String nombre, String apellido, String pass) {
+        if (genero == "male") {
             click(esperaExplicita(genderMale));
-        }else{
+        } else {
             click(esperaExplicita(genderFemale));
         }
-        agregarTexto(esperaExplicita(firstName),nombre);
-        agregarTexto(esperaExplicita(lastName),apellido);
-        agregarTexto(esperaExplicita(email),correo);
-        agregarTexto(esperaExplicita(password),pass);
-        agregarTexto(esperaExplicita(confirmPassword),pass);
+        agregarTexto(esperaExplicita(firstName), nombre);
+        agregarTexto(esperaExplicita(lastName), apellido);
+        agregarTexto(esperaExplicita(email),Email);
+        agregarTexto(esperaExplicita(password), pass);
+        agregarTexto(esperaExplicita(confirmPassword), pass);
         click(esperaExplicita(btnRegister));
     }
-    public String obtenerOkRegister(){
+
+    public String obtenerOkRegister() {
         return obtenerTexto(esperaExplicita(registerOK));
+    }
+
+    public String obtenerRegisterFail(){
+        return  obtenerTexto(esperaExplicita(resgisterNOOK));
     }
 
 
 }
+
+
+
+
+
+

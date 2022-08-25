@@ -12,10 +12,19 @@ public class HomePage extends BaseClass {
     }
 
     By btnRegistro = By.xpath("//a[contains(text(),'Register')]");
-
+    By btnLogin = By.xpath("//a[contains(text(),'Log in')]");
 
     public void IraRegistro(){
         click(esperaExplicita(btnRegistro));
     }
+
+    public void iraLogin(){
+        click(esperaExplicita(btnLogin));
+    }
+
+
+
+
+
 
 }
