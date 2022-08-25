@@ -8,6 +8,7 @@ import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 import pages.HomePage;
 import pages.LoginPage;
+import pages.NewsletterPage;
 import pages.RegisterPage;
 import utils.DataDriven;
 import utils.PropertiesDriven;
@@ -21,11 +22,13 @@ public class Tests{
     private RegisterPage registerPage;
     private ArrayList<String> dataCPs;
     private LoginPage loginPage;
+    private NewsletterPage newsletterPage;
 
     @AfterMethod
     public void posPrueba(){
-        registerPage.cerrarBrowser();
-    }
+        registerPage.cerrarBrowser();}
+
+
 
     @BeforeMethod
     public void preparacionEjecucion(){
@@ -38,6 +41,7 @@ public class Tests{
                     ,PropertiesDriven.getProperty("propertyDriver"));
         registerPage = new RegisterPage(homePage.getDriver());
         loginPage = new LoginPage(homePage.getDriver());
+        newsletterPage = new NewsletterPage(homePage.getDriver());
         homePage.cargarSitio(PropertiesDriven.getProperty("url"));
         homePage.maximizarBrowser();
 
@@ -68,9 +72,26 @@ public class Tests{
     public void CP02LoginOK(){
         //Preparar data
         dataCPs = DataDriven.getData("CP02Login_OK");
-        homePage.esperarXSegundos(5000);
         homePage.iraLogin();
         loginPage.login(dataCPs.get(1),dataCPs.get(2));
         Assert.assertEquals(loginPage.obtenerLoginOK(),dataCPs.get(1));
+    }
+    @Test
+    public void CP03LoginUserInvalido(){
+        //Prepara data
+        dataCPs = DataDriven.getData("CP03LoginUserInvalido");          /**Obtener Data Excel**/
+        homePage.iraLogin();                                                    /**Click Login**/
+        loginPage.login(dataCPs.get(1),dataCPs.get(2));                         /**Completar campos Login**/
+        Assert.assertEquals(loginPage.obtenerLoginError(),dataCPs.get(3)); /**Verificar Login User Invalido**/
+    }
+
+    @Test
+    public void CP07SubNewsletter(){
+        dataCPs = DataDriven.getData("CP07SubNewsletter");
+        homePage.iraLogin();
+        loginPage.login(dataCPs.get(1),dataCPs.get(2));
+        newsletterPage.subNewsletter(dataCPs.get(1));
+        homePage.esperarXSegundos(2000);
+        Assert.assertEquals(newsletterPage.obtenerMsjSub(),dataCPs.get(3));
     }
 }
