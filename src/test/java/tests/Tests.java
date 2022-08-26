@@ -6,10 +6,7 @@ import org.testng.Assert;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
-import pages.HomePage;
-import pages.LoginPage;
-import pages.NewsletterPage;
-import pages.RegisterPage;
+import pages.*;
 import utils.DataDriven;
 import utils.PropertiesDriven;
 
@@ -23,10 +20,12 @@ public class Tests{
     private ArrayList<String> dataCPs;
     private LoginPage loginPage;
     private NewsletterPage newsletterPage;
+    private ProductosPage productPage;
 
-    @AfterMethod
+   @AfterMethod
     public void posPrueba(){
-        registerPage.cerrarBrowser();}
+       registerPage.cerrarBrowser();
+   }
 
 
 
@@ -42,6 +41,7 @@ public class Tests{
         registerPage = new RegisterPage(homePage.getDriver());
         loginPage = new LoginPage(homePage.getDriver());
         newsletterPage = new NewsletterPage(homePage.getDriver());
+        productPage = new ProductosPage(homePage.getDriver());
         homePage.cargarSitio(PropertiesDriven.getProperty("url"));
         homePage.maximizarBrowser();
 
@@ -87,21 +87,23 @@ public class Tests{
 
     @Test
     public void CP05AgregarProducto (){
-        dataCPs = DataDriven.getData("CP05AgregarProducto");
+        dataCPs = DataDriven.getData("CP05AgregarProducto");//obtener data
         homePage.iraLogin();
-        loginPage.login(dataCPs.get(1),dataCPs.get(2));
-        homePage.irAComputer();
-
+        loginPage.login(dataCPs.get(1),dataCPs.get(2));     //loguear usuario
+        homePage.irAComputer();                                 //Ir a sección producto seleccionado
+        productPage.verProducto();                              //click en producto
+        productPage.addToShoppingCart();                        //agregaralcarrito
+        Assert.assertEquals(productPage.obtenerNameProd(),dataCPs.get(3));  //verificar que se haya agregado al carrito
     }
 
     @Test
     public void CP07SubNewsletter(){
-        dataCPs = DataDriven.getData("CP07SubNewsletter");
-        homePage.iraLogin();
-        loginPage.login(dataCPs.get(1),dataCPs.get(2));
-        newsletterPage.subNewsletter(dataCPs.get(1));
+        dataCPs = DataDriven.getData("CP07SubNewsletter"); /**Obtener Data Excel**/
+        homePage.iraLogin();                                        /**Click Login**/
+        loginPage.login(dataCPs.get(1),dataCPs.get(2));             /**Completar campos Login**/
+        newsletterPage.subNewsletter(dataCPs.get(1));               /**Completar usuario en newsletter**/
         homePage.esperarXSegundos(2000);
-        Assert.assertEquals(newsletterPage.obtenerMsjSub(),dataCPs.get(3));
+        Assert.assertEquals(newsletterPage.obtenerMsjSub(),dataCPs.get(3));/**Verificar Suscripcion**/
     }
 
 }
