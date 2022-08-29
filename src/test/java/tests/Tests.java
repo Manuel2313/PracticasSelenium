@@ -47,7 +47,7 @@ public class Tests{
     }
 
     @Test
-    public void CP00_registro_ok(){
+    public void CP00registrook(){
         //Preparar data
         dataCPs = DataDriven.getData("CP00registrook");
         homePage.esperarXSegundos(5000);
@@ -57,7 +57,7 @@ public class Tests{
         Assert.assertEquals(registerPage.obtenerOkRegister(),dataCPs.get(5));
     }
     @Test
-    public void CP01_Registro_NO_OK(){
+    public void CP01RegistroNOOK(){
         //Preparar data
         dataCPs = DataDriven.getData("CP01RegistroNOOK");
         homePage.esperarXSegundos(5000);
