@@ -19,7 +19,6 @@ public class Tests{
     private RegisterPage registerPage;
     private ArrayList<String> dataCPs;
     private LoginPage loginPage;
-    private NewsletterPage newsletterPage;
     private ProductosPage productPage;
 
 
@@ -41,7 +40,6 @@ public class Tests{
                     ,PropertiesDriven.getProperty("propertyDriver"));
         registerPage = new RegisterPage(homePage.getDriver());
         loginPage = new LoginPage(homePage.getDriver());
-        newsletterPage = new NewsletterPage(homePage.getDriver());
         productPage = new ProductosPage(homePage.getDriver());
         homePage.cargarSitio(PropertiesDriven.getProperty("url"));
         homePage.maximizarBrowser();
@@ -116,9 +114,9 @@ public class Tests{
         dataCPs = DataDriven.getData("CP07SubNewsletter"); /**Obtener Data Excel**/
         homePage.iraLogin();                                        /**Click Login**/
         loginPage.login(dataCPs.get(1),dataCPs.get(2));             /**Completar campos Login**/
-        newsletterPage.subNewsletter(dataCPs.get(1));               /**Completar usuario en newsletter**/
+        homePage.subNewsletter(dataCPs.get(1));               /**Completar usuario en newsletter**/
         homePage.esperarXSegundos(2000);
-        Assert.assertEquals(newsletterPage.obtenerMsjSub(),dataCPs.get(3));/**Verificar Suscripcion**/
+        Assert.assertEquals(homePage.obtenerMsjSub(),dataCPs.get(3));/**Verificar Suscripcion**/
     }
 
 }

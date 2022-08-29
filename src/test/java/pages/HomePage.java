@@ -17,6 +17,11 @@ public class HomePage extends BaseClass {
     By btnVote = By.xpath("//input[@id='vote-poll-1']");
     By itemVotar = By.xpath("//input[@id='pollanswers-1']");
     By resultadoVotacion = By.xpath("//div[@id='block-poll-vote-error-1']");
+
+    By inputMail = By.xpath("//input[@id='newsletter-email']");
+    By btnSubcribe = By.xpath("//input[@id='newsletter-subscribe-button']");
+    By msjSub = By.xpath("//div[@id='newsletter-result-block']");
+
     public void IraRegistro(){
         click(esperaExplicita(btnRegistro));
     }
@@ -31,6 +36,16 @@ public class HomePage extends BaseClass {
     public void votarComunnityPoll(){
         click(esperaExplicita(itemVotar));
         click(esperaExplicita(btnVote));
+    }
+
+
+    public void subNewsletter(String mail){
+        agregarTexto(esperaExplicita(inputMail),mail);
+        click(esperaExplicita(btnSubcribe));
+    }
+
+    public String obtenerMsjSub(){
+        return obtenerTexto(esperaExplicita(msjSub));
     }
 
     public String obtenerResultadoVotacion(){
