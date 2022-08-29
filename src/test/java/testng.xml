@@ -5,7 +5,28 @@
     <classes>
         <class name="tests.Tests">
             <methods>
-                <include name="CP00Registrook"/>
+                <include name="CP00registrook"/>
+            </methods>
+            <methods>
+                <include name="CP01RegistroNOOK"/>
+            </methods>
+            <methods>
+                <include name="CP02Login_OK"/>
+            </methods>
+            <methods>
+                <include name="CP03LoginUserInvalido"/>
+            </methods>
+            <methods>
+                <include name="CP004VoteCommunityPollSinLoggear"/>
+            </methods>
+            <methods>
+                <include name="CP05AgregarProducto"/>
+            </methods>
+            <methods>
+                <include name="CP06LoginPassInvalido"/>
+            </methods>
+            <methods>
+                <include name="CP07SubNewsletter"/>
             </methods>
         </class>
     </classes>
