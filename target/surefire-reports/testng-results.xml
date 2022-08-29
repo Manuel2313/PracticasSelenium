@@ -1,93 +1,105 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="1" total="8" passed="7" failed="0" skipped="0">
+<testng-results ignored="0" total="8" passed="8" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2022-08-29T14:42:31Z" name="Suite pruebas de regresión" finished-at="2022-08-29T14:43:32Z" duration-ms="60949">
+  <suite started-at="2022-08-29T14:47:07Z" name="Suite pruebas de regresión" finished-at="2022-08-29T14:48:18Z" duration-ms="70405">
     <groups>
     </groups>
-    <test started-at="2022-08-29T14:42:31Z" name="Casos de prueba" finished-at="2022-08-29T14:43:32Z" duration-ms="60949">
+    <test started-at="2022-08-29T14:47:07Z" name="Casos de prueba" finished-at="2022-08-29T14:48:18Z" duration-ms="70405">
       <class name="tests.Tests">
-        <test-method is-config="true" signature="preparacionEjecucion()[pri:0, instance:tests.Tests@7674f035]" started-at="2022-08-29T14:42:31Z" name="preparacionEjecucion" finished-at="2022-08-29T14:42:36Z" duration-ms="5170" status="PASS">
+        <test-method is-config="true" signature="preparacionEjecucion()[pri:0, instance:tests.Tests@7674f035]" started-at="2022-08-29T14:47:07Z" name="preparacionEjecucion" finished-at="2022-08-29T14:47:13Z" duration-ms="5644" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- preparacionEjecucion -->
-        <test-method signature="CP00registrook()[pri:0, instance:tests.Tests@7674f035]" started-at="2022-08-29T14:42:36Z" name="CP00registrook" finished-at="2022-08-29T14:42:43Z" duration-ms="7577" status="PASS">
+        <test-method signature="CP00registrook()[pri:0, instance:tests.Tests@7674f035]" started-at="2022-08-29T14:47:13Z" name="CP00registrook" finished-at="2022-08-29T14:47:21Z" duration-ms="7634" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- CP00registrook -->
-        <test-method is-config="true" signature="posPrueba()[pri:0, instance:tests.Tests@7674f035]" started-at="2022-08-29T14:42:43Z" name="posPrueba" finished-at="2022-08-29T14:42:44Z" duration-ms="65" status="PASS">
+        <test-method is-config="true" signature="posPrueba()[pri:0, instance:tests.Tests@7674f035]" started-at="2022-08-29T14:47:21Z" name="posPrueba" finished-at="2022-08-29T14:47:21Z" duration-ms="73" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- posPrueba -->
-        <test-method is-config="true" signature="preparacionEjecucion()[pri:0, instance:tests.Tests@7674f035]" started-at="2022-08-29T14:42:44Z" name="preparacionEjecucion" finished-at="2022-08-29T14:42:48Z" duration-ms="4513" status="PASS">
+        <test-method is-config="true" signature="preparacionEjecucion()[pri:0, instance:tests.Tests@7674f035]" started-at="2022-08-29T14:47:21Z" name="preparacionEjecucion" finished-at="2022-08-29T14:47:25Z" duration-ms="4029" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- preparacionEjecucion -->
-        <test-method signature="CP01RegistroNOOK()[pri:0, instance:tests.Tests@7674f035]" started-at="2022-08-29T14:42:48Z" name="CP01RegistroNOOK" finished-at="2022-08-29T14:42:54Z" duration-ms="6022" status="PASS">
+        <test-method signature="CP01RegistroNOOK()[pri:0, instance:tests.Tests@7674f035]" started-at="2022-08-29T14:47:25Z" name="CP01RegistroNOOK" finished-at="2022-08-29T14:47:31Z" duration-ms="6055" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- CP01RegistroNOOK -->
-        <test-method is-config="true" signature="posPrueba()[pri:0, instance:tests.Tests@7674f035]" started-at="2022-08-29T14:42:54Z" name="posPrueba" finished-at="2022-08-29T14:42:54Z" duration-ms="85" status="PASS">
+        <test-method is-config="true" signature="posPrueba()[pri:0, instance:tests.Tests@7674f035]" started-at="2022-08-29T14:47:31Z" name="posPrueba" finished-at="2022-08-29T14:47:31Z" duration-ms="69" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- posPrueba -->
-        <test-method is-config="true" signature="preparacionEjecucion()[pri:0, instance:tests.Tests@7674f035]" started-at="2022-08-29T14:42:54Z" name="preparacionEjecucion" finished-at="2022-08-29T14:42:59Z" duration-ms="4428" status="PASS">
+        <test-method is-config="true" signature="preparacionEjecucion()[pri:0, instance:tests.Tests@7674f035]" started-at="2022-08-29T14:47:31Z" name="preparacionEjecucion" finished-at="2022-08-29T14:47:36Z" duration-ms="4670" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- preparacionEjecucion -->
-        <test-method signature="CP03LoginUserInvalido()[pri:0, instance:tests.Tests@7674f035]" started-at="2022-08-29T14:42:59Z" name="CP03LoginUserInvalido" finished-at="2022-08-29T14:43:00Z" duration-ms="1266" status="PASS">
+        <test-method signature="CP02LoginOK()[pri:0, instance:tests.Tests@7674f035]" started-at="2022-08-29T14:47:36Z" name="CP02LoginOK" finished-at="2022-08-29T14:47:38Z" duration-ms="1898" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- CP02LoginOK -->
+        <test-method is-config="true" signature="posPrueba()[pri:0, instance:tests.Tests@7674f035]" started-at="2022-08-29T14:47:38Z" name="posPrueba" finished-at="2022-08-29T14:47:38Z" duration-ms="74" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- posPrueba -->
+        <test-method is-config="true" signature="preparacionEjecucion()[pri:0, instance:tests.Tests@7674f035]" started-at="2022-08-29T14:47:38Z" name="preparacionEjecucion" finished-at="2022-08-29T14:47:41Z" duration-ms="3913" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- preparacionEjecucion -->
+        <test-method signature="CP03LoginUserInvalido()[pri:0, instance:tests.Tests@7674f035]" started-at="2022-08-29T14:47:41Z" name="CP03LoginUserInvalido" finished-at="2022-08-29T14:47:43Z" duration-ms="1384" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- CP03LoginUserInvalido -->
-        <test-method is-config="true" signature="posPrueba()[pri:0, instance:tests.Tests@7674f035]" started-at="2022-08-29T14:43:00Z" name="posPrueba" finished-at="2022-08-29T14:43:00Z" duration-ms="62" status="PASS">
+        <test-method is-config="true" signature="posPrueba()[pri:0, instance:tests.Tests@7674f035]" started-at="2022-08-29T14:47:43Z" name="posPrueba" finished-at="2022-08-29T14:47:43Z" duration-ms="61" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- posPrueba -->
-        <test-method is-config="true" signature="preparacionEjecucion()[pri:0, instance:tests.Tests@7674f035]" started-at="2022-08-29T14:43:00Z" name="preparacionEjecucion" finished-at="2022-08-29T14:43:04Z" duration-ms="4505" status="PASS">
+        <test-method is-config="true" signature="preparacionEjecucion()[pri:0, instance:tests.Tests@7674f035]" started-at="2022-08-29T14:47:43Z" name="preparacionEjecucion" finished-at="2022-08-29T14:47:47Z" duration-ms="4549" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- preparacionEjecucion -->
-        <test-method signature="CP004VoteCommunityPollSinLoggear()[pri:0, instance:tests.Tests@7674f035]" started-at="2022-08-29T14:43:04Z" name="CP004VoteCommunityPollSinLoggear" finished-at="2022-08-29T14:43:06Z" duration-ms="1711" status="PASS">
+        <test-method signature="CP004VoteCommunityPollSinLoggear()[pri:0, instance:tests.Tests@7674f035]" started-at="2022-08-29T14:47:47Z" name="CP004VoteCommunityPollSinLoggear" finished-at="2022-08-29T14:47:49Z" duration-ms="1677" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- CP004VoteCommunityPollSinLoggear -->
-        <test-method is-config="true" signature="posPrueba()[pri:0, instance:tests.Tests@7674f035]" started-at="2022-08-29T14:43:06Z" name="posPrueba" finished-at="2022-08-29T14:43:06Z" duration-ms="78" status="PASS">
+        <test-method is-config="true" signature="posPrueba()[pri:0, instance:tests.Tests@7674f035]" started-at="2022-08-29T14:47:49Z" name="posPrueba" finished-at="2022-08-29T14:47:49Z" duration-ms="69" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- posPrueba -->
-        <test-method is-config="true" signature="preparacionEjecucion()[pri:0, instance:tests.Tests@7674f035]" started-at="2022-08-29T14:43:06Z" name="preparacionEjecucion" finished-at="2022-08-29T14:43:11Z" duration-ms="4459" status="PASS">
+        <test-method is-config="true" signature="preparacionEjecucion()[pri:0, instance:tests.Tests@7674f035]" started-at="2022-08-29T14:47:49Z" name="preparacionEjecucion" finished-at="2022-08-29T14:47:54Z" duration-ms="4541" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- preparacionEjecucion -->
-        <test-method signature="CP05AgregarProducto()[pri:0, instance:tests.Tests@7674f035]" started-at="2022-08-29T14:43:11Z" name="CP05AgregarProducto" finished-at="2022-08-29T14:43:18Z" duration-ms="6839" status="PASS">
+        <test-method signature="CP05AgregarProducto()[pri:0, instance:tests.Tests@7674f035]" started-at="2022-08-29T14:47:54Z" name="CP05AgregarProducto" finished-at="2022-08-29T14:48:00Z" duration-ms="6525" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- CP05AgregarProducto -->
-        <test-method is-config="true" signature="posPrueba()[pri:0, instance:tests.Tests@7674f035]" started-at="2022-08-29T14:43:18Z" name="posPrueba" finished-at="2022-08-29T14:43:18Z" duration-ms="69" status="PASS">
+        <test-method is-config="true" signature="posPrueba()[pri:0, instance:tests.Tests@7674f035]" started-at="2022-08-29T14:48:00Z" name="posPrueba" finished-at="2022-08-29T14:48:00Z" duration-ms="66" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- posPrueba -->
-        <test-method is-config="true" signature="preparacionEjecucion()[pri:0, instance:tests.Tests@7674f035]" started-at="2022-08-29T14:43:18Z" name="preparacionEjecucion" finished-at="2022-08-29T14:43:22Z" duration-ms="4049" status="PASS">
+        <test-method is-config="true" signature="preparacionEjecucion()[pri:0, instance:tests.Tests@7674f035]" started-at="2022-08-29T14:48:00Z" name="preparacionEjecucion" finished-at="2022-08-29T14:48:08Z" duration-ms="7157" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- preparacionEjecucion -->
-        <test-method signature="CP06LoginPassInvalido()[pri:0, instance:tests.Tests@7674f035]" started-at="2022-08-29T14:43:22Z" name="CP06LoginPassInvalido" finished-at="2022-08-29T14:43:23Z" duration-ms="1301" status="PASS">
+        <test-method signature="CP06LoginPassInvalido()[pri:0, instance:tests.Tests@7674f035]" started-at="2022-08-29T14:48:08Z" name="CP06LoginPassInvalido" finished-at="2022-08-29T14:48:09Z" duration-ms="1352" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- CP06LoginPassInvalido -->
-        <test-method is-config="true" signature="posPrueba()[pri:0, instance:tests.Tests@7674f035]" started-at="2022-08-29T14:43:23Z" name="posPrueba" finished-at="2022-08-29T14:43:23Z" duration-ms="62" status="PASS">
+        <test-method is-config="true" signature="posPrueba()[pri:0, instance:tests.Tests@7674f035]" started-at="2022-08-29T14:48:09Z" name="posPrueba" finished-at="2022-08-29T14:48:09Z" duration-ms="58" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- posPrueba -->
-        <test-method is-config="true" signature="preparacionEjecucion()[pri:0, instance:tests.Tests@7674f035]" started-at="2022-08-29T14:43:23Z" name="preparacionEjecucion" finished-at="2022-08-29T14:43:27Z" duration-ms="4481" status="PASS">
+        <test-method is-config="true" signature="preparacionEjecucion()[pri:0, instance:tests.Tests@7674f035]" started-at="2022-08-29T14:48:09Z" name="preparacionEjecucion" finished-at="2022-08-29T14:48:14Z" duration-ms="4851" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- preparacionEjecucion -->
-        <test-method signature="CP07SubNewsletter()[pri:0, instance:tests.Tests@7674f035]" started-at="2022-08-29T14:43:27Z" name="CP07SubNewsletter" finished-at="2022-08-29T14:43:32Z" duration-ms="4132" status="PASS">
+        <test-method signature="CP07SubNewsletter()[pri:0, instance:tests.Tests@7674f035]" started-at="2022-08-29T14:48:14Z" name="CP07SubNewsletter" finished-at="2022-08-29T14:48:18Z" duration-ms="3967" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- CP07SubNewsletter -->
-        <test-method is-config="true" signature="posPrueba()[pri:0, instance:tests.Tests@7674f035]" started-at="2022-08-29T14:43:32Z" name="posPrueba" finished-at="2022-08-29T14:43:32Z" duration-ms="57" status="PASS">
+        <test-method is-config="true" signature="posPrueba()[pri:0, instance:tests.Tests@7674f035]" started-at="2022-08-29T14:48:18Z" name="posPrueba" finished-at="2022-08-29T14:48:18Z" duration-ms="70" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- posPrueba -->
