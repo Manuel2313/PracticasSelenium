@@ -22,6 +22,7 @@ public class Tests{
     private NewsletterPage newsletterPage;
     private ProductosPage productPage;
 
+
    @AfterMethod
     public void posPrueba(){
        registerPage.cerrarBrowser();
@@ -84,7 +85,14 @@ public class Tests{
         loginPage.login(dataCPs.get(1),dataCPs.get(2));                         /**Completar campos Login**/
         Assert.assertEquals(loginPage.obtenerLoginError(),dataCPs.get(3)); /**Verificar Login User Invalido**/
     }
-
+    @Test
+    public void CP004VoteCommunityPollSinLoggear(){
+        //Prepara data
+        dataCPs = DataDriven.getData("CP004VoteCommunityPollSinLoggear");   //Obtiene dato del excel
+        homePage.votarComunnityPoll(); //Lo hago dentro del homepage porque no cambia la pag
+        homePage.esperarXSegundos(1500);
+        Assert.assertEquals(homePage.obtenerResultadoVotacion(),dataCPs.get(2));  //verificar que se haya intentado votar
+    }
     @Test
     public void CP05AgregarProducto (){
         dataCPs = DataDriven.getData("CP05AgregarProducto");//obtener data
@@ -95,7 +103,14 @@ public class Tests{
         productPage.addToShoppingCart();                        //agregaralcarrito
         Assert.assertEquals(productPage.obtenerNameProd(),dataCPs.get(3));  //verificar que se haya agregado al carrito
     }
-
+    @Test
+    public void CP06LoginPassInvalido (){
+        //Prepara data
+        dataCPs = DataDriven.getData("CP06LoginPassInvalido");          /**Obtener Data Excel**/
+        homePage.iraLogin();                                                    /**Click Login**/
+        loginPage.login(dataCPs.get(1),dataCPs.get(2));                         /**Completar campos Login con pass invalida**/
+        Assert.assertEquals(loginPage.obtenerPassError(),dataCPs.get(3)); /**Verificar Login Pass Invalido**/
+    }
     @Test
     public void CP07SubNewsletter(){
         dataCPs = DataDriven.getData("CP07SubNewsletter"); /**Obtener Data Excel**/
