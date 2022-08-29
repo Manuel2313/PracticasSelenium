@@ -7,7 +7,7 @@
             <methods>
                 <include name="CP00registrook"/>
                 <include name="CP01RegistroNOOK"/>
-                <include name="CP02Login_OK"/>
+                <include name="CP02LoginOK"/>
                 <include name="CP03LoginUserInvalido"/>
                 <include name="CP004VoteCommunityPollSinLoggear"/>
                 <include name="CP05AgregarProducto"/>
