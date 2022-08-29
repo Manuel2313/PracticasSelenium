@@ -91,7 +91,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">1 method,   1 passed</span>
+                    <span class="method-stats">5 methods,   5 passed</span>
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -100,6 +100,26 @@
                       <a href="#" panel-name="suite-Suite_pruebas_de_regresión" class="show-methods passed suite-Suite_pruebas_de_regresión"> (show)</a> <!-- show-methods passed suite-Suite_pruebas_de_regresión -->
                     </span>
                     <div class="method-list-content passed suite-Suite_pruebas_de_regresión">
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite_pruebas_de_regresión" title="tests.Tests" class="method navigator-link" hash-for-method="CP004VoteCommunityPollSinLoggear">CP004VoteCommunityPollSinLoggear</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite_pruebas_de_regresión" title="tests.Tests" class="method navigator-link" hash-for-method="CP03LoginUserInvalido">CP03LoginUserInvalido</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite_pruebas_de_regresión" title="tests.Tests" class="method navigator-link" hash-for-method="CP05AgregarProducto">CP05AgregarProducto</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite_pruebas_de_regresión" title="tests.Tests" class="method navigator-link" hash-for-method="CP06LoginPassInvalido">CP06LoginPassInvalido</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
                         <a href="#" panel-name="suite-Suite_pruebas_de_regresión" title="tests.Tests" class="method navigator-link" hash-for-method="CP07SubNewsletter">CP07SubNewsletter</a> <!-- method navigator-link -->
@@ -125,6 +145,34 @@
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
+                  <a name="CP004VoteCommunityPollSinLoggear">
+                  </a> <!-- CP004VoteCommunityPollSinLoggear -->
+                  <span class="method-name">CP004VoteCommunityPollSinLoggear</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="CP03LoginUserInvalido">
+                  </a> <!-- CP03LoginUserInvalido -->
+                  <span class="method-name">CP03LoginUserInvalido</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="CP05AgregarProducto">
+                  </a> <!-- CP05AgregarProducto -->
+                  <span class="method-name">CP05AgregarProducto</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="CP06LoginPassInvalido">
+                  </a> <!-- CP06LoginPassInvalido -->
+                  <span class="method-name">CP06LoginPassInvalido</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
                   <a name="CP07SubNewsletter">
                   </a> <!-- CP07SubNewsletter -->
                   <span class="method-name">CP07SubNewsletter</span>
@@ -146,6 +194,13 @@
     &lt;classes&gt;
       &lt;class name=&quot;tests.Tests&quot;&gt;
         &lt;methods&gt;
+          &lt;include name=&quot;CP00registrook&quot;/&gt;
+          &lt;include name=&quot;CP01RegistroNOOK&quot;/&gt;
+          &lt;include name=&quot;CP02Login_OK&quot;/&gt;
+          &lt;include name=&quot;CP03LoginUserInvalido&quot;/&gt;
+          &lt;include name=&quot;CP004VoteCommunityPollSinLoggear&quot;/&gt;
+          &lt;include name=&quot;CP05AgregarProducto&quot;/&gt;
+          &lt;include name=&quot;CP06LoginPassInvalido&quot;/&gt;
           &lt;include name=&quot;CP07SubNewsletter&quot;/&gt;
         &lt;/methods&gt;
       &lt;/class&gt; &lt;!-- tests.Tests --&gt;
@@ -188,16 +243,32 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(1);
+data.addRows(5);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'CP07SubNewsletter')
+data.setCell(0, 1, 'CP05AgregarProducto')
 data.setCell(0, 2, 'tests.Tests')
-data.setCell(0, 3, 4521);
+data.setCell(0, 3, 7200);
+data.setCell(1, 0, 1)
+data.setCell(1, 1, 'CP07SubNewsletter')
+data.setCell(1, 2, 'tests.Tests')
+data.setCell(1, 3, 3981);
+data.setCell(2, 0, 2)
+data.setCell(2, 1, 'CP03LoginUserInvalido')
+data.setCell(2, 2, 'tests.Tests')
+data.setCell(2, 3, 1778);
+data.setCell(3, 0, 3)
+data.setCell(3, 1, 'CP004VoteCommunityPollSinLoggear')
+data.setCell(3, 2, 'tests.Tests')
+data.setCell(3, 3, 1681);
+data.setCell(4, 0, 4)
+data.setCell(4, 1, 'CP06LoginPassInvalido')
+data.setCell(4, 2, 'tests.Tests')
+data.setCell(4, 3, 1326);
 window.suiteTableData['Suite_pruebas_de_regresión']= { tableData: data, tableDiv: 'times-div-Suite_pruebas_de_regresión'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 4 seconds</span>
+              <span class="suite-total-time">Total running time: 15 seconds</span>
               <div id="times-div-Suite_pruebas_de_regresión">
               </div> <!-- times-div-Suite_pruebas_de_regresión -->
             </div> <!-- times-div -->
@@ -212,23 +283,15 @@ return data;
         </div> <!-- panel -->
         <div panel-name="ignored-methods-Suite_pruebas_de_regresión" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">7 ignored methods</span>
+            <span class="header-content">3 ignored methods</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="ignored-class-div">
               <span class="ignored-class-name">tests.Tests</span>
               <div class="ignored-methods-div">
-                <span class="ignored-method-name">CP004VoteCommunityPollSinLoggear</span>
-                <br/>
-                <span class="ignored-method-name">CP05AgregarProducto</span>
-                <br/>
                 <span class="ignored-method-name">CP02LoginOK</span>
                 <br/>
                 <span class="ignored-method-name">CP00_registro_ok</span>
-                <br/>
-                <span class="ignored-method-name">CP03LoginUserInvalido</span>
-                <br/>
-                <span class="ignored-method-name">CP06LoginPassInvalido</span>
                 <br/>
                 <span class="ignored-method-name">CP01_Registro_NO_OK</span>
                 <br/>
@@ -248,12 +311,60 @@ return data;
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
-                <span class="method-name">CP07SubNewsletter</span>
-                <span class="method-start">5267 ms</span>
+                <span class="method-name">CP03LoginUserInvalido</span>
+                <span class="method-start">5029 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">posPrueba</span>
-                <span class="method-start">9789 ms</span>
+                <span class="method-start">6808 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">preparacionEjecucion</span>
+                <span class="method-start">6877 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">CP004VoteCommunityPollSinLoggear</span>
+                <span class="method-start">11499 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">posPrueba</span>
+                <span class="method-start">13180 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">preparacionEjecucion</span>
+                <span class="method-start">13245 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">CP05AgregarProducto</span>
+                <span class="method-start">18036 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">posPrueba</span>
+                <span class="method-start">25236 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">preparacionEjecucion</span>
+                <span class="method-start">25300 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">CP06LoginPassInvalido</span>
+                <span class="method-start">29784 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">posPrueba</span>
+                <span class="method-start">31110 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">preparacionEjecucion</span>
+                <span class="method-start">31170 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">CP07SubNewsletter</span>
+                <span class="method-start">35214 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">posPrueba</span>
+                <span class="method-start">39195 ms</span>
               </div> <!-- configuration-method after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
